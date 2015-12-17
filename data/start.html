@@ -1,0 +1,82 @@
+<html>
+<head>
+  <script src='main.js'></script>
+  <style>
+  body {
+    overflow-x:hidden;
+  }
+  #logo {
+    width:96px;
+    margin:120px auto;
+    margin-bottom:20px;
+  }
+  #title {
+    width:300px;
+  }
+  #title p {
+    font-family: 'Roboto Condensed';
+    font-size:1.1em;
+    color:black;
+    text-align:center;
+  }
+  #submit {
+    width:280px;
+  }
+  #submit input {
+    width:100%;
+  }
+  #text {
+    border-style:solid;
+    border-width:1px;
+    border-bottom-width: 0px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-color:rgb(150,150,150);
+    background-color:white;
+    font-family: 'Roboto Condensed';
+    padding:10px;
+  }
+  #submit-btn {
+    outline:none;
+    border-style:solid;
+    border-width:1px;
+    border-top-width: 0px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-color:rgb(150,150,150);
+    color:black;
+    background-color:#F4D03F;
+    font-family: 'Roboto Condensed';
+    font-weight: bold;
+    font-style: italic;
+    padding:10px;
+  }
+  #submit-btn:active {
+    background-color: #e6c43b;
+    outline: none;
+  }
+  #link {
+    font-family: 'Roboto Condensed';
+    text-align:center;
+  }
+
+  </style>
+</head>
+<body>
+<div id='logo'>
+  <img src='http://that.startpage.rocks/static/icons/tsr.svg' width=96></img>
+</div>
+<div id='title'>
+  <p>COPY/PASTE YOUR STARTPAGE'S URL:</p>
+</div>
+<div id='submit'>
+  <form onsubmit="">
+    <div><input type='text' id='text' autofocus></input></div>
+    <div><input type='submit' id='submit-btn' value='ADD YOUR STARTPAGE'></input></div>
+  </form>
+</div>
+<div id='link'>
+  <p>HAVEN'T GOT A STARTPAGE ? <a href='http://that.startpage.rocks/signup' target="_blank">CLICK HERE</a>.</p>
+</div>
+</body>
+</html>

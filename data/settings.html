@@ -1,0 +1,71 @@
+<html>
+<head>
+  <title>FIREFOX ADDON STARTPAGE</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:700,400' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <!--<link href="http://that.startpage.rocks/static/styles/firefox_addon.css" rel="stylesheet" type="text/css">-->
+  <script src='main.js'></script>
+  <style>
+  body {
+    background-color:white;
+    margin:0px;
+    padding:0px;
+    overflow:hidden;
+  }
+  button {
+    outline:none;
+  }
+  #header{margin:0px;padding:0px;margin-top:-20px;border-style:solid;border-width:0px;border-bottom-width:2px;border-color:rgb(200,200,200);height:50px;}
+  #header h1 {
+    color:black;
+    margin-left:4px;
+    margin-top:20px;
+    padding:10px;
+    font-family: 'Roboto Condensed';
+  }
+  #back {
+    color:rgb(60,60,60);
+    font-size:1em;
+    border-style:solid;
+    border-width:0px;
+    background-color:white;
+  }
+  #back:hover {
+    color:rgb(30,30,30)
+  }
+
+  #options-list{overflow-y:auto;height:450px;margin:0px;background-color:rgb(245,245,245);}
+  .option {
+    border-style:solid;
+    border-width:0px;
+    border-bottom-width: 1px;
+    border-bottom-color:rgb(200,200,200);
+    border-top-width: 1px;
+    border-top-color: white;
+    background-color:rgb(245,245,245);
+    width:100%;
+    padding:10px;
+    font-size:1.4em;
+  }
+  .option:hover {
+    background-color:rgb(250,250,250);
+  }
+  .option:active {
+    background-color:rgb(230,230,230);
+  }
+  </style>
+</head>
+<body>
+  <div id='header'>
+    <h1 ><button id='back'><i class='fa fa-angle-left'></i></button>  Settings</h1>
+  </div>
+    <div id='options-list'>
+      <!--<button class='option' id='sp-add'><i class='fa fa-plus'></i> Add a bookmark</button>-->
+      <button class='option' id='sp-edit'><i class='fa fa-pencil'></i>  Edit your startpage</button>
+      <button class='option' id='reload'><i class='fa fa-repeat'></i>  Use another startpage</button>
+      <p style="font-family:'Roboto Condensed';font-style:italic;text-align:center;"> OR CONTRIBUTE BY :</p>
+      <button class='option' id='report'><i class='fa fa-github'></i>  Reporting a bug</button>
+      <button class='option' id='review'><i class='fa fa-star'></i>  Reviewing it</button>
+  </div>
+</body>
+</html>

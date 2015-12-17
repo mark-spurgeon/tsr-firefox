@@ -1,0 +1,19 @@
+{
+  "name": "that-startpage-rocks-apps",
+  "id":"apps@that-startpage-rocks.com",
+  "title": "That Startpage Rocks",
+  "description": "Launch your apps from your startpage registered at that.startpage.rocks",
+  "author": "Mark Spurgeon <theduck.dev@gmail.com>",
+  "license": "LGPL-3.0",
+  "version": "0.1",
+  "preferences": [{
+        "name": "spURL",
+        "title": "Startpage URL",
+        "description": "You're startpage's URL, don't change it unless you know what you're doing.",
+        "type": "string",
+        "value":"start.html"
+    }],
+    "permissions":{
+      "cross-domain-content":["http://startpage-1072.appspot.com","http://that.startpage.rocks"]
+    }
+}
