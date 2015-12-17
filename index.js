@@ -60,11 +60,11 @@ panel.port.on("open-link", function(url) {
     panel.hide();
   }
   if (url == '#report') {
-    tabs.open('https://github.com/the-duck/tsr-firefox');
+    tabs.open('https://github.com/the-duck/tsr-firefox/issues/new');
     panel.hide();
   }
   if (url == '#review') {
-    tabs.open('http://that.startpage.rocks/edit');
+    tabs.open('https://addons.mozilla.org/en-US/firefox/addon/that-startpage-rocks/');
     panel.hide();
   }
 });
