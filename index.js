@@ -1,8 +1,8 @@
-var { ToggleButton } = require('sdk/ui/button/toggle');
-var panels = require("sdk/panel");
-var self = require("sdk/self");
-var prefs = require("sdk/simple-prefs");
-var tabs = require("sdk/tabs");
+const { ToggleButton } = require('sdk/ui/button/toggle');
+const panels = require("sdk/panel");
+const self = require("sdk/self");
+const prefs = require("sdk/simple-prefs");
+const tabs = require("sdk/tabs");
 
 function getToggleButtonIcon(enabled) {
       return {
@@ -56,7 +56,8 @@ panel.port.on("open-link", function(url) {
     panel.hide();
   }
   if (url == '#sp-add') {
-    tabs.open('http://that.startpage.rocks/edit');
+    let taburl = tabs.activeTab.url;
+    tabs.open('http://that.startpage.rocks/add?url='+taburl);
     panel.hide();
   }
   if (url == '#report') {
