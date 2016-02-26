@@ -5,9 +5,9 @@
           <em:type>2</em:type>
           <em:bootstrap>true</em:bootstrap>
           <em:unpack>false</em:unpack>
-          <em:version>0.1</em:version>
+          <em:version>0.2</em:version>
           <em:name>That Startpage Rocks</em:name>
-          <em:description>Launch your apps from your startpage registered at that.startpage.rocks</em:description>
+          <em:description>Launch your apps from your startpage registered at http://that.startpage.rocks</em:description>
           <em:creator>Mark Spurgeon &lt;theduck.dev@gmail.com&gt;</em:creator>
           <em:optionsURL>data:text/xml,&lt;placeholder/&gt;</em:optionsURL>
           <em:optionsType>2</em:optionsType>

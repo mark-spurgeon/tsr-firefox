@@ -34,8 +34,8 @@ window.addEventListener('submit', function(event) {
     if ((t.value.indexOf('http://that.startpage.rocks/') === 0) || (t.value.indexOf('that.startpage.rocks/') === 0)){
       id = t.value.split('/');
       id = id[id.length - 1];
-      var new_url = 'http://that.startpage.rocks/firefox_addon/'+id;
-      self.port.emit('set-url',new_url);
+      var new_url =id;
+      self.port.emit('set-user',new_url);
     } else {
       /*do something */
     }
